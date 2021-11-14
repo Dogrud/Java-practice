@@ -1,0 +1,46 @@
+// calculator project
+package javaapplication1;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class javaapplication1{
+
+   
+    public static void main(String[] args) {
+        Scanner keyboard=new Scanner(System.in);
+        System.out.println("please enter the number of the line that you wanna do");
+        System.out.println("1= + \n2= - \n3= * \n4= /");
+        int secim,num1,num2;
+        secim=keyboard.nextInt();
+        
+        System.out.println("please enter the numbers that you want to make the process in order:");
+        num1=keyboard.nextInt();
+        num2=keyboard.nextInt();
+        
+        switch(secim){
+            case 1:
+            {
+                System.out.println("the result of the process is "+(num1+num2));
+                break;
+            }
+            case 2:
+            {
+                System.out.println("the result of the process is "+(num1-num2));
+                break;
+            }
+                case 3:
+                {
+                    System.out.println("the result of the process is "+(num1*num2));
+                    break;
+                }
+                    case 4:
+                    {
+                        System.out.println("the result of the process is "+(num1/num2));
+                        break;
+                    }
+        }
+        
+        System.out.println(" you precess has ended ");
+   
+    
+    }
+}   
