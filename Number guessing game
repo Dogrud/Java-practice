@@ -1,0 +1,38 @@
+// Number guessing game
+package javaapplication1;
+import java.util.Random;
+import java.util.Scanner;
+public class javaapplication1{
+
+   
+    public static void main(String[] args) {
+        Scanner keyboard=new Scanner(System.in);
+        Random rnd=new Random();
+        int guess,number;
+        System.out.println("tahmininizi giriniz:");
+        System.out.println("welcome to number guessing game:");
+        System.out.println("please enter a integer number between 1-100");
+        guess=keyboard.nextInt();
+        number=rnd.nextInt(101);
+        while(number != guess)
+        {
+                if(guess<0&&guess>100)
+                {
+                    System.out.println("please enter a number beteen 1-100");
+                    guess=keyboard.nextInt();
+                }
+                else if(guess<number)                   
+                {
+                    System.out.println("please enter a bigger number");
+                    guess=keyboard.nextInt();
+                }
+                else
+                {
+                    System.out.println("please enter smaller number");
+                    guess=keyboard.nextInt();
+                }
+        
+        }
+        System.out.println(" congrulations you guessed the right number:");
+    }
+}   
